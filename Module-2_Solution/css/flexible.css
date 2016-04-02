@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Goudy Old Style",Garamond,"Big Caslon","Times New Roman",serif;
+	font-size: 18px;
+}
+
+.row{
+	width: 100%;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.header{
+	text-align: center;
+	font-size: 175%;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+div > div > div{
+	padding: 8px;
+	clear: right;
+}
+
+.box-content{
+	border: 2px solid black;
+	border-radius: 20px;
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin: 10px 10px 10px 10px;
+	background-color: #DCDCDC;
+}
+
+.topic{
+	position: relative;
+	float: right;
+	right: -10px;
+	top: -10px;
+	border: 2px solid black;
+	border-top-right-radius: 20px;
+	width: 120px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+#chicken-t{
+	background-color: #DB7093;
+}
+
+#beef-t{
+	background-color: #CD5555;
+}
+
+#sushi-t{
+	background-color: #FFEC8B;
+}
+
+/************************ Large device (992>) ************************/
+@media (min-width: 992px){
+	.col-lg-4, .col-lg-6, .col-lg-12{
+		float: left;
+		padding: 10px 3px 0px 3px;	
+	}
+	.col-lg-4 {
+		width: 33.33%;
+	}
+}
+
+/************************ Medium device (768 - 991) ************************/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12{
+		float: left;
+		padding: 10px 3px 0px 3px;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+/************************ Small device (<767) ************************/
+@media (max-width: 767px){
+	.col-sm-12{
+		float: left;
+		width: 100%;
+		padding: 10px 3px 0px 3px;
+	}
+}
